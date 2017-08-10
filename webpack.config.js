@@ -13,9 +13,9 @@ module.exports = {
 
 
   output: {
-    path: __dirname + 'public',
+    path: __dirname + '/public',
     filename: '[name].js',   //'bundle.js',
-    // publicPath: '/'
+    publicPath: '/'
   },
 
   plugins: process.env.NODE_ENV === 'production' ? [
@@ -26,7 +26,10 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery"
     })
-  ] : [],
+  ] : [new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery: "jquery"
+  })],
   devServer: {
     inline: true,
     port: 7777
