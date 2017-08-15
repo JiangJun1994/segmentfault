@@ -32,5 +32,11 @@ let  User = sequelizer.define("user",{
   privateNet:{
     type:Sequelize.STRING,
     allowNull:true
+  },
+  picAddr:{
+    type:Sequelize.STRING,
+    allowNull: true
   }
 })
+User.sync();//生成表
+module.exports=User;
