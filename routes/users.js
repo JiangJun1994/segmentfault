@@ -100,4 +100,6 @@ router.post('/updateMessage',function(req,res,next){
 
 })
 
+//update pic
+
 module.export = router
