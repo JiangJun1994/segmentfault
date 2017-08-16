@@ -1,10 +1,11 @@
 /**
- * Created by jiangjun on 2017/8/15.
+ * Created by jiangjun on 2017/8/16.
  */
+
 let Sequelize = require('sequelize')
 let sequelizer = require('./sequelizer')
 
-let Comment = sequelizer.define('comment',{
+let CommentForD = sequelizer.define('commentford',{
   id:{
     type:Sequelize.INTEGER,
     primaryKey:true,
@@ -23,5 +24,5 @@ let Comment = sequelizer.define('comment',{
     type:Sequelize.STRING
   }
 })
-Comment.sync()
-module.exports = Comment
+CommentForD.sync()
+module.exports = CommentForD

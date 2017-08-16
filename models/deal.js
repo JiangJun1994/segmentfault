@@ -1,9 +1,10 @@
 /**
- * Created by jiangjun on 2017/8/15.
+ * Created by jiangjun on 2017/8/16.
  */
+
 let Sequelize = require ("sequelize")
 let sequelizer = require ("./sequelizer")
-let Question = sequelizer.define('question',{
+let Deal = sequelizer.define('deal',{
   id:{
     type:Sequelize.INTEGER,
     primaryKey:true,
@@ -26,5 +27,5 @@ let Question = sequelizer.define('question',{
     allowNull:false
   }
 })
-Question.sync()
-module.exports = Question
+Deal.sync()
+module.exports = Deal
