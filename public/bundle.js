@@ -16576,16 +16576,19 @@ var _Header = __webpack_require__(308);
 
 var _Header2 = _interopRequireDefault(_Header);
 
+var _Sign = __webpack_require__(430);
+
+var _Sign2 = _interopRequireDefault(_Sign);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
- * Created by jiangjun on 2017/8/9.
- */
 (0, _reactDom.render)(_react2.default.createElement(
   _reactRouter.Router,
   { history: _reactRouter.hashHistory },
-  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Header2.default })
-), document.getElementById('app'));
+  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Sign2.default })
+), document.getElementById('app')); /**
+                                     * Created by jiangjun on 2017/8/9.
+                                     */
 
 /***/ }),
 /* 187 */
@@ -31213,9 +31216,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(123);
-
 var _reactDom = __webpack_require__(20);
+
+var _reactRouter = __webpack_require__(123);
 
 var _mobxReact = __webpack_require__(427);
 
@@ -44586,6 +44589,12 @@ try {
 
 module.exports = g;
 
+
+/***/ }),
+/* 430 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: SyntaxError: Unexpected token (26:0)\n\n\u001b[0m \u001b[90m 24 | \u001b[39m}\n \u001b[90m 25 | \u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 | \u001b[39m\u001b[37m\u001b[41m\u001b[1m@\u001b[22m\u001b[49m\u001b[39minject(\u001b[32m\"account\"\u001b[39m)\n \u001b[90m    | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 | \u001b[39m\u001b[37m\u001b[41m\u001b[1m@\u001b[22m\u001b[49m\u001b[39mobserver\n \u001b[90m 28 | \u001b[39m\u001b[36mclass\u001b[39m \u001b[33mLoginForm\u001b[39m \u001b[36mextends\u001b[39m \u001b[33mReact\u001b[39m\u001b[33m.\u001b[39m\u001b[33mComponent\u001b[39m {\n \u001b[90m 29 | \u001b[39m  handleSubmit \u001b[33m=\u001b[39m (e) \u001b[33m=>\u001b[39m {\u001b[0m\n");
 
 /***/ })
 /******/ ]);

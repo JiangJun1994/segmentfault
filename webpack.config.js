@@ -39,6 +39,10 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       {
+        test:/\.scss$/,
+        loaders:'style-loader!css-loader!sass-loader'
+      },
+      {
         test: /\.(png|jpg)$/,
         loader: 'url?limit=25000'
       },

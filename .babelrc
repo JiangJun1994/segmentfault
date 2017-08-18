@@ -1,10 +1,11 @@
 {
-  "presets": ["es2015", "react"],
+  "presets": ["es2015", "react","stage-1"],
   "plugins": [["import", [{
     "libraryName": "bootstrap",
     "style": "css"
 },{
     "libraryName": "antd",
     "style": "css"
-  }]]
+  }]],
+    ["transform-decorators-legacy"]
   ]}

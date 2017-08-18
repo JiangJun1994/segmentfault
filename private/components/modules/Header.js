@@ -2,7 +2,6 @@
  * Created by jiangjun on 2017/8/9.
  */
 import React from 'react'
-import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 import { render } from 'react-dom'
 import {Link} from 'react-router';
 import {observer, inject} from 'mobx-react';
@@ -13,6 +12,7 @@ const Search = Input.Search
 class Headers extends React.Component{
 render(){
   return(
+    <div>
     <div className="container">
       <Row>
         <Col span={12}>
@@ -38,6 +38,8 @@ render(){
           </Row>
         </Col>
       </Row>
+    </div>
+      {this.props.children}
     </div>
   )
  }
